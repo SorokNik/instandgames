@@ -40,19 +40,14 @@
 
 html {
 	font-size: .52vw;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Geologica', sans-serif;
 	font-weight: 400;
-	color: #212121;
-}
-
-html,
-body {
-	min-height: 100%;
-	position: relative;
+	color: #263151;
 }
 
 body {
-	font-size: 1rem;
+	font-size: 1.4rem;
+	overflow-x: hidden;
 }
 
 ul,
@@ -70,18 +65,10 @@ h6 {
 }
 
 .container{
-	width: 120rem;
+	width: 116rem;
 	margin: 0 auto;
 }
 
-.add-transition{
-	transition: 0.2s linear;
-}
-
-.hide {
-	display: none;
-}
-
-.show{
-	display: block;
+a{
+	text-decoration: none;
 }

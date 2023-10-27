@@ -1,3 +1,39 @@
 .header{
-
+  width: 100%;
+  position: fixed;
+  background: #FFF;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  .container{
+    min-height: 6rem;
+    .header__logo{
+      @include bg;
+      width: 16rem;
+      height: 3.3rem;
+    }
+    .header__items{
+      width: 76rem;
+      .header__links{
+        width: 46.3rem;
+        .header__link{
+          color: #545F7E;
+          font-size: 1.6rem;
+          font-weight: 300;
+        }
+      }
+      .header__log_in{
+        width: 22.5rem;
+        .header__question{
+          color: #A4A4A4;
+          font-size: 1.1rem;
+          font-weight: 300;
+          width: 5rem;
+        }
+        .header__button{
+          width: 16rem;
+          height: 3.5rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
