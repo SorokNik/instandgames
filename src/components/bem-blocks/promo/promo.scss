@@ -1,3 +1,83 @@
 .promo{
-
+  padding-top: 11rem;
+  .promo__wrapper{
+    width: 66.4rem;
+    height: 54.3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .promo__titles{
+      position: relative;
+      .promo__title{
+        color: #545F7E;
+        font-family: 'Proserpina-Deco', sans-serif;
+        font-size: 9.7rem;
+        letter-spacing: -2.425px;
+        line-height: normal;
+        span{
+          color: #46D2B9;
+        }
+      }
+      .promo__subtitle{
+        color: #545F7E;
+        font-size: 3.2rem;
+        font-weight: 200;
+        line-height: normal;
+        letter-spacing: 16.16px;
+        text-transform: uppercase;
+        min-width: 55.7rem;
+        position: absolute;
+        top: 14rem;
+        left: 13rem;
+      }
+    }
+    .promo__descr_wrapper{
+      margin-top: 5rem;
+      .promo__descr_title{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        span{
+          text-transform: uppercase;
+        }
+      }
+      .promo__descr{
+        font-weight: 300;
+        text-align: center;
+      }
+      .promo__descr_top{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+      .promo__delimeter{
+        width: 100%;
+        height: 2.8rem;
+        margin-top: 3.5rem;
+        @include bg;
+      }
+      .promo__descr_bottom_wrapper{
+        width: 94.5rem;
+        .promo__descr_bottom{
+          margin-top: 3.5rem;
+          font-size: 1.4rem;
+          width: 66.4rem;
+        }
+        .promo__button{
+          width: 26rem;
+          height: 4.7rem;
+          margin-left: 6.6rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  //.promo__button_collage_wrapper{
+  //  width: 26rem;
+  //  margin-left: 2.5rem;
+  //  height: 49.7rem;
+  //  .promo__button{
+  //    position: relative;
+  //    bottom: 0;
+  //  }
+  //}
 }
