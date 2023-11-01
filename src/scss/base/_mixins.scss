@@ -53,4 +53,33 @@
 	transition: all #{$tr}s;
 }
 
-$accent-color: #DD3974
+$sizes: ("xs":320px, "s":576px, "m":992px, "l":1200px, "xl":1400px);
+
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $sizes {
+		@if $media == $size {
+			@if ($minmax != "within") {
+				@media only screen and (#{$minmax}-width: $resolution) {
+					@content;
+				}
+			} @else {
+				@if (index(map-keys($sizes), $media) > 1) {
+					@media only screen and (min-width: getPreviousSize($media)+1) and (max-width: $resolution) {
+						@content;
+					}
+				} @else {
+					@media only screen and (max-width: $resolution) {
+						@content;
+					}
+				}
+			}
+		}
+	}
+}
+
+@function getPreviousSize($currentSize) {
+	$keys: map-keys($sizes);
+	$index: index($keys, $currentSize)-1;
+	$value: map-values($sizes);
+	@return nth($value, $index);
+}

@@ -1,8 +1,9 @@
 .header{
   width: 100%;
   position: fixed;
+  z-index: 1;
   background: #FFF;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.05);
   .container{
     min-height: 6rem;
     .header__logo{

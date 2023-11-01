@@ -72,3 +72,25 @@ h6 {
 a{
 	text-decoration: none;
 }
+
+@include media('max', 'xl'){
+	html{
+		font-size: 0.7vw;
+	}
+}
+
+@include media('max', 'l'){
+	html{
+		font-size: 0.74vw;
+	}
+}
+
+@include media('max', 'm'){
+	html{
+		font-size: 1vw;
+	}
+
+	.container{
+		width: 95.6rem;
+	}
+}

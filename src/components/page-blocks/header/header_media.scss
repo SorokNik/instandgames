@@ -1,0 +1,15 @@
+@include media('max', 'm'){
+  .header{
+    .container{
+      .header__items{
+        width: 66rem;
+        .header__links{
+          width: 36.1rem;
+        }
+        .header__log_in{
+            width: 5rem;
+        }
+      }
+    }
+  }
+}
