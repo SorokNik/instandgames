@@ -47,7 +47,10 @@ html {
 
 body {
 	font-size: 1.4rem;
-	overflow-x: hidden;
+	main{
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
 ul,
@@ -81,7 +84,7 @@ a{
 
 @include media('max', 'l'){
 	html{
-		font-size: 0.74vw;
+		font-size: 0.8vw;
 	}
 }
 
@@ -92,5 +95,15 @@ a{
 
 	.container{
 		width: 95.6rem;
+	}
+}
+
+@include media('max', 's'){
+	html{
+		font-size: 2.67vw;
+	}
+
+	.container{
+		width: 33.9rem;
 	}
 }

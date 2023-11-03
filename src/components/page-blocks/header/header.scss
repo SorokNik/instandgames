@@ -1,7 +1,7 @@
 .header{
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   background: #FFF;
   box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.05);
   .container{
@@ -33,6 +33,43 @@
           width: 16rem;
           height: 3.5rem;
           font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@include media('max', 'm'){
+  .header{
+    .container{
+      .header__items{
+        width: 66rem;
+        .header__links{
+          width: 36.1rem;
+        }
+      }
+    }
+  }
+}
+
+@include media('max', 's'){
+  .header{
+    .container{
+      .header__items{
+        width: 11rem;
+        .header__links{
+          display: none;
+        }
+        .header__log_in{
+          width: 100%;
+          .header__button{
+            width: 5.4rem;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: -0.025rem;
+          }
         }
       }
     }
