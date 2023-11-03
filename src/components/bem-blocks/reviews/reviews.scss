@@ -1,0 +1,89 @@
+.reviews{
+  padding: 8.3rem 0 12.7rem 0;
+  min-height: 100rem;
+  .container{
+    position: relative;
+    .reviews__title{
+      text-align: left;
+      width: 66rem;
+    }
+    .reviews__collage{
+      position: absolute;
+      width: 66.5rem;
+      height: 51rem;
+      .reviews__collage_img{
+        border-radius: 2.1rem;
+        border: 0.8rem solid #fff;
+        box-shadow: 0 0 1.6rem 0 #C5D8EB;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+      }
+      .reviews__collage_img1{
+        width: 39%;
+        height: 29.4%;
+        transform: rotate(-15deg);
+        background-image: url("../img/reviews/collage/reviews_collage_img1.webp");
+        top: 5%;
+        left: 2%;
+      }
+      .reviews__collage_img2{
+        width: 36%;
+        height: 73.5%;
+        transform: rotate(-15deg);
+        background-image: url("../img/reviews/collage/reviews_collage_img2.webp");
+        top: 20%;
+        left: 25%;
+      }
+      .reviews__collage_img3{
+        width: 45.11%;
+        height: 39.2%;
+        transform: rotate(-15deg);
+        background-image: url("../img/reviews/collage/reviews_collage_img3.webp");
+        top: 27%;
+        left: 50%;
+      }
+      .reviews__collage_img1,
+      .reviews__collage_img2,
+      .reviews__collage_img3{
+        z-index: 1;
+      }
+      .reviews__top_ellipse,
+      .reviews__bottom_ellipse{
+        position: absolute;
+        z-index: 0;
+      }
+      .reviews__top_ellipse{
+        @include bg;
+        width: 95.2%;
+        height: 108.2%;
+        top: -4%;
+        left: -13%;
+      }
+      .reviews__bottom_ellipse{
+        @include bg;
+        width: 82.7%;
+        height: 101.37%;
+        top: 3%;
+        left: 4%;
+      }
+    }
+    .reviews__list_wrapper{
+      margin: 8.5rem 0 0 auto;
+      width: 46rem;
+      .reviews__list{
+        .reviews__li{
+          list-style: none;
+        }
+        .reviews__li::before{
+          content: '';
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-right: 2.8rem;
+        }
+      }
+    }
+  }
+}

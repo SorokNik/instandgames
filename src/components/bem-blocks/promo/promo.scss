@@ -4,7 +4,7 @@
   background: url("data:image/svg+xml;charset=utf8, %3Csvg width='416' height='441' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M342 294c0 66.274-53.726 120-120 120s-120-53.726-120-120 53.726-120 120-120 120 53.726 120 120zm-191.745 0c0 39.624 32.121 71.745 71.745 71.745s71.745-32.121 71.745-71.745-32.121-71.745-71.745-71.745-71.745 32.121-71.745 71.745zM443 391c0 27.614-22.386 50-50 50s-50-22.386-50-50 22.386-50 50-50 50 22.386 50 50zm-73.362 0c0 12.902 10.46 23.362 23.362 23.362 12.902 0 23.362-10.46 23.362-23.362 0-12.902-10.46-23.362-23.362-23.362-12.902 0-23.362 10.46-23.362 23.362zM98.277 395.518a3.722 3.722 0 003.723-3.722v-21.592a3.722 3.722 0 00-3.723-3.722H65.518v-32.759A3.723 3.723 0 0061.796 330H40.204a3.723 3.723 0 00-3.722 3.723v32.759H3.722A3.722 3.722 0 000 370.204v21.592a3.722 3.722 0 003.723 3.722h32.759v32.759A3.723 3.723 0 0040.204 432h21.592a3.723 3.723 0 003.722-3.723v-32.759h32.76zM282.33 97.567c-1.924-3.334.481-7.5 4.33-7.5h162.813c3.849 0 6.255 4.166 4.33 7.5l-81.406 141c-1.925 3.333-6.736 3.333-8.66 0l-81.407-141z' fill='%23fff'/%3E%3C/svg%3E")
                 100% 118% / 24% no-repeat,
               url("../img/promo/promo_yellow_swirl.webp")
-                0 -20%rem / 21.51% no-repeat,
+                0 -20% / 21.51% no-repeat,
               url("data:image/svg+xml;charset=utf8, %3Csvg width='520' height='522' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M518 261.5A259.501 259.501 0 00269.232 2.222' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-dasharray='15 15'/%3E%3Cpath d='M28.222 380.046a259 259 0 00235.3 140.405' stroke='%23B7BDCF' stroke-linecap='round' stroke-dasharray='15 15'/%3E%3C/svg%3E")
                 77% 60% / 26.93% no-repeat,
               url("../img/promo/promo_bg.webp")
@@ -183,17 +183,20 @@
 @include media('max', 'xl'){
   .promo{
     background: url("data:image/svg+xml;charset=utf8, %3Csvg width='416' height='441' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M342 294c0 66.274-53.726 120-120 120s-120-53.726-120-120 53.726-120 120-120 120 53.726 120 120zm-191.745 0c0 39.624 32.121 71.745 71.745 71.745s71.745-32.121 71.745-71.745-32.121-71.745-71.745-71.745-71.745 32.121-71.745 71.745zM443 391c0 27.614-22.386 50-50 50s-50-22.386-50-50 22.386-50 50-50 50 22.386 50 50zm-73.362 0c0 12.902 10.46 23.362 23.362 23.362 12.902 0 23.362-10.46 23.362-23.362 0-12.902-10.46-23.362-23.362-23.362-12.902 0-23.362 10.46-23.362 23.362zM98.277 395.518a3.722 3.722 0 003.723-3.722v-21.592a3.722 3.722 0 00-3.723-3.722H65.518v-32.759A3.723 3.723 0 0061.796 330H40.204a3.723 3.723 0 00-3.722 3.723v32.759H3.722A3.722 3.722 0 000 370.204v21.592a3.722 3.722 0 003.723 3.722h32.759v32.759A3.723 3.723 0 0040.204 432h21.592a3.723 3.723 0 003.722-3.723v-32.759h32.76zM282.33 97.567c-1.924-3.334.481-7.5 4.33-7.5h162.813c3.849 0 6.255 4.166 4.33 7.5l-81.406 141c-1.925 3.333-6.736 3.333-8.66 0l-81.407-141z' fill='%23fff'/%3E%3C/svg%3E")
-                  100% 109%/24% no-repeat,
-                url(../img/promo/promo_yellow_swirl.webp)
-                  0 -20%/18.51% no-repeat,
+                  100% 109% / 24% no-repeat,
+                url("../img/promo/promo_yellow_swirl.webp")
+                  -14% 2% / 21.51% no-repeat,
                 url("data:image/svg+xml;charset=utf8, %3Csvg width='520' height='522' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M518 261.5A259.501 259.501 0 00269.232 2.222' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-dasharray='15 15'/%3E%3Cpath d='M28.222 380.046a259 259 0 00235.3 140.405' stroke='%23B7BDCF' stroke-linecap='round' stroke-dasharray='15 15'/%3E%3C/svg%3E")
-                  90% 60%/33.93% no-repeat,
+                  90% 60% / 33.93% no-repeat,
                 url(../img/promo/promo_bg.webp)
                   center/cover no-repeat;
     .promo__pink_swirl{
       width: 18rem;
       height: 16.7rem;
       left: 94rem;
+    }
+    .promo__figures{
+      left: -17rem;
     }
   }
 }
@@ -289,7 +292,9 @@
       left: 84.5rem;
     }
     .promo__figures{
-      bottom: -9rem;
+      width: 34.1rem;
+      height: 29rem;
+      bottom: -6rem;
       left: -10rem;
     }
     .promo__green_swirl{
