@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "group-css-media-queries": "^1.4.1",
-    "sass": "^1.56.0"
+    "sass": "^1.56.0",
+    "swiper": "^11.0.3"
   }
 }

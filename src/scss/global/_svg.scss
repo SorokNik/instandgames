@@ -133,6 +133,24 @@
 .--svg__reviews_bottom_ellipse-after::after {
     content:'';
 }
+.--svg__reviews_next_btn,.--svg__reviews_next_btn-before::before,.--svg__reviews_next_btn-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='48' fill='none'%3E%3Cpath d='M2 46l11-22.5-11-22' stroke='%234F576E' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.--svg__reviews_next_btn-before::before {
+    content:'';
+}
+.--svg__reviews_next_btn-after::after {
+    content:'';
+}
+.--svg__reviews_prev_btn,.--svg__reviews_prev_btn-before::before,.--svg__reviews_prev_btn-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='48' fill='none'%3E%3Cpath d='M13 1.5L2 24l11 22' stroke='%234F576E' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.--svg__reviews_prev_btn-before::before {
+    content:'';
+}
+.--svg__reviews_prev_btn-after::after {
+    content:'';
+}
 .--svg__reviews_top_ellipse,.--svg__reviews_top_ellipse-before::before,.--svg__reviews_top_ellipse-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='633' height='552' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M493.766 93.068a3.636 3.636 0 000 5.142l14.912 14.912a3.636 3.636 0 005.142 0l22.624-22.625 22.625 22.625a3.636 3.636 0 005.142 0l14.911-14.912a3.636 3.636 0 000-5.142l-22.624-22.624 22.624-22.625a3.636 3.636 0 000-5.142l-14.911-14.911a3.636 3.636 0 00-5.142 0L536.444 50.39 513.82 27.766a3.636 3.636 0 00-5.142 0l-14.912 14.912a3.636 3.636 0 000 5.142l22.625 22.624-22.625 22.624zM156 316c0 43.078-34.922 78-78 78S0 359.078 0 316c0-43.079 34.922-78 78-78s78 34.921 78 78zm-124.8 0c0 25.846 20.953 46.8 46.8 46.8 25.847 0 46.8-20.954 46.8-46.8 0-25.847-20.953-46.8-46.8-46.8-25.847 0-46.8 20.953-46.8 46.8z' fill='%23DEF0F0'/%3E%3Cpath d='M484.264 58.91a259 259 0 00-361.112 172.097' stroke='%23B7BDCF' stroke-linecap='round' stroke-dasharray='15 15'/%3E%3C/svg%3E");
 }
