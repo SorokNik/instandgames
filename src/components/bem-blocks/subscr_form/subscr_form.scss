@@ -1,0 +1,198 @@
+.subscr_form{
+  background: url("../img/subscr_form/subscr_form_bg.webp") center / cover;
+  >.container{
+    position: relative;
+    min-height: 65.5rem;
+    .subscr_form__wrapper{
+      position: absolute;
+      padding: 6rem 10rem 9.3rem 10rem;
+      border-radius: 5.3rem;
+      background: #FFF;
+      box-shadow: 0 0 1.8rem 0 #C5D8EB;
+      top: -4.4rem;
+      bottom: -5.4rem;
+      display: flex;
+      justify-content: space-between;
+      height: fit-content;
+      .subscr_form__descr{
+        position: relative;
+        .subscr_form__logo{
+          @include bg;
+          width: 15rem;
+          height: 3rem;
+          position: absolute;
+          top: 0;
+          left: -4.6rem;
+        }
+        .subscr_form__title{
+          color: #41D2C3;
+          font-family: 'Proserpina-Deco', sans-serif;
+          font-size: 9.7rem;
+          line-height: normal;
+          letter-spacing: -0.2425rem;
+          margin-top: 0.4rem;
+          span{
+            display: inline-block;
+            width: 32rem;
+            color: #545F7E;
+            font-family: 'Geologica',  sans-serif;
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.08rem;
+            text-transform: uppercase;
+            position: absolute;
+            top: 14.8rem;
+            left: 9.9rem;
+          }
+        }
+        .subscr_form__list{
+          margin-top: 8rem;
+          margin-left: 10rem;
+          width: 36rem;
+          list-style: none;
+          .subscr_form__li{
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 220.5%;
+            letter-spacing: -0.05rem;
+            display: flex;
+            align-items: center;
+          }
+          .subscr_form__li::before{
+            content: '';
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 0.2rem;
+            background: #55D49F;
+            margin-right: 1.5rem;
+          }
+        }
+        .subscr_form__pay_sys_wrap{
+          margin-top: 3.6rem;
+          margin-left: 10rem;
+          width: 31rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .subscr_form__pay_sys1,
+          .subscr_form__pay_sys2,
+          .subscr_form__pay_sys3{
+            @include bg;
+          }
+          .subscr_form__pay_sys1{
+            width: 6.6rem;
+            height: 2.2rem;
+          }
+          .subscr_form__pay_sys2{
+            width: 7.7rem;
+            height: 2.1rem;
+          }
+          .subscr_form__pay_sys3{
+            width: 5.2rem;
+            height: 3.2rem;
+          }
+        }
+      }
+      .subscr_form__form{
+        margin-top: 4rem;
+        width: 46.5rem;
+        .subscr_form__form_title_wrapper{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          font-size: 3.2rem;
+          .subscr_form__form_title{
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.352rem;
+            text-transform: uppercase;
+          }
+          .subscr_form__sale{
+            color: #F79E1B;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: -0.08rem;
+            text-transform: uppercase;
+          }
+          .subscr_form__price{
+            font-size: 1.4rem;
+            line-height: normal;
+            letter-spacing: -0.035rem;
+            text-transform: uppercase;
+          }
+        }
+        .subscr_form__email{
+          margin-top: 2.3rem;
+          width: 100%;
+          height: 6.4rem;
+          border: none;
+          border-radius: 0.3rem;
+          background: #E5F3FF;
+          color: #4F576F;
+          font-size: 2rem;
+          font-weight: 300;
+          letter-spacing: -0.05rem;
+          padding-left: 3rem;
+        }
+        .subscr_form__checkboxes{
+          padding: 2.5rem 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          font-size: 1.2rem;
+          font-weight: 300;
+          line-height: normal;
+          letter-spacing: -0.03rem;
+          .subscr_form__checkbox{
+            display: flex;
+            justify-content: space-between;
+            .subscr_form__checkbox_text{
+              width: 42rem;
+            }
+            .subscr_form__custom-checkbox{
+              width: 2rem;
+              height: 2rem;
+              border-radius: 0.3rem;
+              background: #E5F3FF;
+              display: block;
+              input {
+                opacity: 0;
+                z-index: -1;
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+              }
+              input:checked + label::before {
+                position: absolute;
+                content: '';
+                top: 0.4rem;
+                left: 0.3rem;
+                right: 0.3rem;
+                bottom: 0.3rem;
+                background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='none'%3E%3Cpath d='M1 5.5L5 9l6-8' stroke='%234F576E' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+                @include bg;
+              }
+              label {
+                position: relative;
+                width: 2rem;
+                height: 2rem;
+                display: block;
+                border-radius: 0.3rem;
+                cursor: pointer;
+                background: #E5F3FF;
+              }
+            }
+          }
+        }
+        .subscr_form__button{
+          height: 6rem;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
