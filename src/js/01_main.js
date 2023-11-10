@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const screenWidth = {
+        xl: 1400,
+        l: 1200,
+        m: 992,
+        s: 576
+    }
+
     const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
         breakpoints: {
@@ -28,11 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
         selector = document.querySelector(selector);
         parentSelector = document.querySelector(parentSelector);
 
-        if (selector.clientHeight > parentSelector.clientHeight) {
-            setTimeout(() =>{parentSelector.style.height = `calc(${selector.clientHeight + 'px - 9.8rem' })`}, 1000)
-        }
+        document.documentElement.clientWidth > screenWidth.m ?
+            parentSelector.style.height = `calc(${selector.clientHeight + 'px - 9.8rem' })` :
+            document.documentElement.clientWidth >= screenWidth.s ?
+                parentSelector.style.height = `calc(${selector.clientHeight + 'px + -4.4rem' })` :
+                parentSelector.removeAttribute('style');
     }
 
-    setParentHeight('.subscr_form__wrapper', '#subscr_form__container')
+    setTimeout(()=> {setParentHeight('.subscr_form__wrapper', '#subscr_form__container')}, 1000)
+
+    window.addEventListener('resize', () => {
+        setParentHeight('.subscr_form__wrapper', '#subscr_form__container');
+    });
 
 });

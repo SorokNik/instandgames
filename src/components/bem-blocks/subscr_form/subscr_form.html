@@ -1,6 +1,6 @@
 <section class="subscr_form">
     <div class="container" id="subscr_form__container">
-        <div class="subscr_form__wrapper">
+        <div class="subscr_form__wrapper --svg__subscr_form_figures_bg">
             <div class="subscr_form__descr">
                 <div class="subscr_form__logo --svg__site_logo"></div>
                 <div class="subscr_form__title">Играй <span>на instandgames прямо сейчас</span></div>
@@ -16,24 +16,24 @@
                     <div class="subscr_form__pay_sys3 --svg__mastercard"></div>
                 </div>
             </div>
-            <form action="" class="subscr_form__form">
+            <form action="" class="subscr_form__form" id="order">
                 <div class="subscr_form__form_title_wrapper">
                     <div class="subscr_form__form_title">НАЧНИ ПРЯМО СЕЙЧАС!</div>
                     <div class="subscr_form__sale">СКИДКА 97%</div>
                     <div class="subscr_form__price">11₽ вместо 899₽</div>
                 </div>
-                <input type="email" class="subscr_form__email" placeholder="Твой E-mail">
+                <input type="email" class="subscr_form__email" placeholder="Твой E-mail" required>
                 <div class="subscr_form__checkboxes">
                     <div class="subscr_form__checkbox">
                         <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check" name="" value="1">
+                            <input type="checkbox" id="check" checked required>
                             <label for="check"></label>
                         </div>
                         <div class="subscr_form__checkbox_text">
                             Нажимая кнопку "Попробовать сейчас" Вы даете
-                            согласие на обработку персональных данных,
+                            <a href="https://veelgames.com/uploads/permission.pdf">согласие на обработку персональных данных</a>,
                             а также подтверждаете ознакомление с
-                            публичной офертой и автоматическими списаниями.
+                            <a href="https://veelgames.com/uploads/oferta.pdf">публичной офертой</a> и автоматическими списаниями.
                             Списание 11 руб. необходимо для создания настроек рекуррентного платежа и
                             возвращается в течение суток в полном объеме.
                             Первое списание в размере 899 рублей через 24 часа после подписки и далее,
@@ -42,67 +42,7 @@
                     </div>
                     <div class="subscr_form__checkbox">
                         <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
+                            <input type="checkbox" id="check2" checked required>
                             <label for="check2"></label>
                         </div>
                         <div class="subscr_form__checkbox_text">
@@ -113,9 +53,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="button subscr_form__button">попробовать сейчас</a>
+                <button type="submit" class="button subscr_form__button">попробовать сейчас</button>
             </form>
         </div>
+        <div class="subscr_form__red_swirl"></div>
     </div>
     @@include('../../page-blocks/footer/_footer.html')
 </section>

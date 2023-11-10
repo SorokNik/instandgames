@@ -28,10 +28,10 @@
         <div class="header__logo --svg__site_logo"></div>
         <div class="header__items flex --just-space --align-center">
             <nav class="header__links flex --just-space">
-                <a href="#" class="header__link">Наши игры</a>
-                <a href="#" class="header__link">Подписка</a>
-                <a href="#" class="header__link">Отзывы</a>
-                <a href="#" class="header__link">Заказ</a>
+                <a href="#our_games" class="header__link">Наши игры</a>
+                <a href="#subscription" class="header__link">Подписка</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+                <a href="#order" class="header__link">Заказ</a>
             </nav>
             <div class="header__log_in flex --just-space --align-center">
                 <div class="header__question">Уже есть доступ?</div>
@@ -69,7 +69,7 @@
                         нескольких сессиях классических аркадных игр.
                     </p>
 
-                    <a href="#" class="promo__button button">начать игру</a>
+                    <a href="#order" class="promo__button button">начать игру</a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="promo__figures --svg__promo_figures"></div>
     <div class="promo__green_swirl"></div>
 </section>
-			<section class="advantages">
+			<section class="advantages" id="our_games">
     <div class="container">
         <h2 class="advantages__title title">Наши HTML-игры доступны <span>прямо из вашего браузера</span></h2>
         <div class="advantages__descr_wrapper">
@@ -271,9 +271,9 @@
             </div>
         </div>
     </div>
-    <a href="" class="advantages__button button">начать игру</a>
+    <a href="#order" class="advantages__button button">начать игру</a>
 </section>
-			<section class="how_it_use">
+			<section class="how_it_use" id="subscription">
     <div class="container">
         <div class="how_it_use__content_wrapper flex --just-space">
             <h2 class="title how_it_use__title">Как пользоваться подпиской на игровой?</h2>
@@ -318,7 +318,7 @@
         </div>
     </div>
 </section>
-			<section class="reviews">
+			<section class="reviews" id="reviews">
     <div class="container">
         <div class="reviews__triangle_bg --svg__reviews_triangle_bg"></div>
         <h2 class="title reviews__title">
@@ -339,7 +339,7 @@
                 <li class="reviews__li">Свыше 2000 пользователей</li>
                 <li class="reviews__li">Большое онлайн-присутствие</li>
             </ul>
-            <a href="#" class="button reviews__button">начать игру</a>
+            <a href="#order" class="button reviews__button">начать игру</a>
             <div class="reviews__comment">
                 Отключить подписку можно в любой момент в разделе Управления подпиской.
             </div>
@@ -413,7 +413,7 @@
 </section>
 			<section class="subscr_form">
     <div class="container" id="subscr_form__container">
-        <div class="subscr_form__wrapper">
+        <div class="subscr_form__wrapper --svg__subscr_form_figures_bg">
             <div class="subscr_form__descr">
                 <div class="subscr_form__logo --svg__site_logo"></div>
                 <div class="subscr_form__title">Играй <span>на instandgames прямо сейчас</span></div>
@@ -429,24 +429,24 @@
                     <div class="subscr_form__pay_sys3 --svg__mastercard"></div>
                 </div>
             </div>
-            <form action="" class="subscr_form__form">
+            <form action="" class="subscr_form__form" id="order">
                 <div class="subscr_form__form_title_wrapper">
                     <div class="subscr_form__form_title">НАЧНИ ПРЯМО СЕЙЧАС!</div>
                     <div class="subscr_form__sale">СКИДКА 97%</div>
                     <div class="subscr_form__price">11₽ вместо 899₽</div>
                 </div>
-                <input type="email" class="subscr_form__email" placeholder="Твой E-mail">
+                <input type="email" class="subscr_form__email" placeholder="Твой E-mail" required>
                 <div class="subscr_form__checkboxes">
                     <div class="subscr_form__checkbox">
                         <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check" name="" value="1">
+                            <input type="checkbox" id="check" checked required>
                             <label for="check"></label>
                         </div>
                         <div class="subscr_form__checkbox_text">
                             Нажимая кнопку "Попробовать сейчас" Вы даете
-                            согласие на обработку персональных данных,
+                            <a href="https://veelgames.com/uploads/permission.pdf">согласие на обработку персональных данных</a>,
                             а также подтверждаете ознакомление с
-                            публичной офертой и автоматическими списаниями.
+                            <a href="https://veelgames.com/uploads/oferta.pdf">публичной офертой</a> и автоматическими списаниями.
                             Списание 11 руб. необходимо для создания настроек рекуррентного платежа и
                             возвращается в течение суток в полном объеме.
                             Первое списание в размере 899 рублей через 24 часа после подписки и далее,
@@ -455,67 +455,7 @@
                     </div>
                     <div class="subscr_form__checkbox">
                         <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
-                            <label for="check2"></label>
-                        </div>
-                        <div class="subscr_form__checkbox_text">
-                            Согласен на автоматическую оплату 899 рублей каждые 30 дней
-                            по истечению пробного периода в 24 часа.
-                            Возможно частичное списание 399 рублей за 14 дней доступа,
-                            либо 199 рублей за 7 дней доступа, либо 89 рублей за 3 дня доступа.
-                        </div>
-                    </div>
-                    <div class="subscr_form__checkbox">
-                        <div class="subscr_form__custom-checkbox">
-                            <input type="checkbox" id="check2" name="" value="1">
+                            <input type="checkbox" id="check2" checked required>
                             <label for="check2"></label>
                         </div>
                         <div class="subscr_form__checkbox_text">
@@ -526,9 +466,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="button subscr_form__button">попробовать сейчас</a>
+                <button type="submit" class="button subscr_form__button">попробовать сейчас</button>
             </form>
         </div>
+        <div class="subscr_form__red_swirl"></div>
     </div>
     <footer class="footer">
     <div class="container">

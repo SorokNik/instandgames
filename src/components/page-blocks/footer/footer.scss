@@ -8,6 +8,7 @@
       font-size: 1.6rem;
       font-weight: 300;
       letter-spacing: -0.04rem;
+      color: #545F7E;
     }
     .footer__log_in{
       gap: 1.4rem;
@@ -29,6 +30,67 @@
       font-size: 1.2rem;
       font-weight: 300;
       letter-spacing: -0.03rem;
+    }
+  }
+}
+
+@include media('max', 'm'){
+  .footer{
+    padding: 2rem 0 2.5rem 0;
+    background: transparent;
+    .footer__items{
+      width: 53.3rem;
+      height: 3.9rem;
+      margin: 0 0 0 6rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0.4rem;
+      .footer__subscr_manage{
+        order: 1;
+      }
+      .footer__log_in{
+        order: 3;
+      }
+      .footer__copyright{
+        order: 2;
+      }
+    }
+  }
+}
+
+@include media('max', 's'){
+  .footer{
+    padding: 2rem 0 1.2rem 0;
+    background: #EBF3FB;
+    .footer__items{
+      width: 100%;
+      margin: 0;
+      height: 8rem;
+      align-items: center;
+      gap: 0.7rem;
+      .footer__subscr_manage{
+        font-size: 1rem;
+        letter-spacing: -0.025rem;
+        order: 3;
+      }
+      .footer__log_in{
+        width: 11.5rem;
+        gap: 0.8rem;
+        order: 2;
+        flex-direction: column;
+        align-items: flex-end;
+        .footer__button{
+          width: 100%;
+        }
+      }
+      .footer__copyright{
+        width: 7rem;
+        font-size: 1rem;
+        order: 1;
+      }
     }
   }
 }
